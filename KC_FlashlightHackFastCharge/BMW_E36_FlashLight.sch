@@ -1,0 +1,262 @@
+EESchema Schematic File Version 2
+LIBS:BMW_E36_FlashLight-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:references
+LIBS:BMW_E36_FlashLight-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +12V #PWR2
+U 1 1 597813F4
+P 5150 1800
+F 0 "#PWR2" H 5150 1650 50  0001 C CNN
+F 1 "+12V" H 5150 1940 50  0000 C CNN
+F 2 "" H 5150 1800 50  0001 C CNN
+F 3 "" H 5150 1800 50  0001 C CNN
+	1    5150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 597813FA
+P 5100 5550
+F 0 "#PWR1" H 5100 5300 50  0001 C CNN
+F 1 "GND" H 5100 5400 50  0000 C CNN
+F 2 "" H 5100 5550 50  0001 C CNN
+F 3 "" H 5100 5550 50  0001 C CNN
+	1    5100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 1.47k1
+U 1 1 59781400
+P 5550 2550
+F 0 "1.47k1" V 5630 2550 50  0000 C CNN
+F 1 "10k" V 5550 2550 50  0000 C CNN
+F 2 "" V 5480 2550 50  0001 C CNN
+F 3 "" H 5550 2550 50  0001 C CNN
+	1    5550 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01_FEMALE J2
+U 1 1 59781406
+P 4700 1950
+F 0 "J2" H 4700 2050 50  0000 C CNN
+F 1 "CONN_01X01_FEMALE" H 4950 1800 50  0000 C CNN
+F 2 "" H 4700 1950 50  0001 C CNN
+F 3 "" H 4700 1950 50  0001 C CNN
+	1    4700 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01_FEMALE J1
+U 1 1 5978140C
+P 4650 5450
+F 0 "J1" H 4650 5550 50  0000 C CNN
+F 1 "CONN_01X01_FEMALE" H 4900 5350 50  0000 C CNN
+F 2 "" H 4650 5450 50  0001 C CNN
+F 3 "" H 4650 5450 50  0001 C CNN
+	1    4650 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Battery-RESCUE-BMW_E36_FlashLight BT1
+U 1 1 59781412
+P 6200 5150
+F 0 "BT1" H 6300 5250 50  0000 L CNN
+F 1 "Two Cell - 200maH NiMH Coin" H 6300 5150 50  0000 L CNN
+F 2 "" V 6200 5210 50  0001 C CNN
+F 3 "" V 6200 5210 50  0001 C CNN
+	1    6200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DIP_x01 SW1
+U 1 1 59781418
+P 6950 4800
+F 0 "SW1" H 6950 4950 50  0000 C CNN
+F 1 "SW_DIP_x01" H 6950 4650 50  0000 C CNN
+F 2 "" H 6950 4800 50  0001 C CNN
+F 3 "" H 6950 4800 50  0001 C CNN
+	1    6950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lamp LA1
+U 1 1 5978141E
+P 7700 5200
+F 0 "LA1" H 7725 5350 50  0000 L CNN
+F 1 "2.2v 0.25A Lamp" H 7725 5050 50  0000 L CNN
+F 2 "" V 7700 5300 50  0001 C CNN
+F 3 "" V 7700 5300 50  0001 C CNN
+	1    7700 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1950 6200 1950
+Wire Wire Line
+	6200 4800 6650 4800
+Connection ~ 6200 4800
+Wire Wire Line
+	7250 4800 7700 4800
+Wire Wire Line
+	7700 4800 7700 5000
+Wire Wire Line
+	4750 5450 7700 5450
+Wire Wire Line
+	5100 5450 5100 5550
+Wire Wire Line
+	6200 5450 6200 5350
+Connection ~ 5100 5450
+Wire Wire Line
+	7700 5450 7700 5400
+Connection ~ 6200 5450
+Wire Wire Line
+	5150 1800 5150 1950
+Connection ~ 5150 1950
+$Comp
+L TL431LP D1
+U 1 1 59781579
+P 5550 4650
+F 0 "D1" H 5450 4750 50  0000 C CNN
+F 1 "TL431LP" H 5550 4550 50  0000 C CNN
+F 2 "TO-92" H 5550 4500 50  0000 C CIN
+F 3 "" H 5550 4650 50  0000 C CNN
+	1    5550 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 2700 5550 4550
+Connection ~ 6200 4250
+Wire Wire Line
+	5550 4750 5550 5450
+Connection ~ 5550 5450
+$Comp
+L R R1
+U 1 1 5978188F
+P 5900 4450
+F 0 "R1" V 5980 4450 50  0000 C CNN
+F 1 "3.6k 1%" V 5800 4450 50  0000 C CNN
+F 2 "" V 5830 4450 50  0000 C CNN
+F 3 "" H 5900 4450 50  0000 C CNN
+	1    5900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 597818E6
+P 5900 4900
+F 0 "R2" V 5980 4900 50  0000 C CNN
+F 1 "30k 1%" V 5800 4900 50  0000 C CNN
+F 2 "" V 5830 4900 50  0000 C CNN
+F 3 "" H 5900 4900 50  0000 C CNN
+	1    5900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4650 5900 4650
+Wire Wire Line
+	5900 4600 5900 4750
+Connection ~ 5900 4650
+Wire Wire Line
+	5900 4300 5900 4250
+Connection ~ 5900 4250
+Wire Wire Line
+	5900 5050 5900 5450
+Connection ~ 5900 5450
+$Comp
+L BSS138 Q1
+U 1 1 5978259C
+P 6100 3300
+F 0 "Q1" H 6300 3375 50  0000 L CNN
+F 1 "BSS138" H 6300 3300 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6300 3225 50  0001 L CIN
+F 3 "" H 6100 3300 50  0000 L CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59782606
+P 6200 2550
+F 0 "R3" V 6280 2550 50  0000 C CNN
+F 1 "620" V 6200 2550 50  0000 C CNN
+F 2 "" V 6130 2550 50  0000 C CNN
+F 3 "" H 6200 2550 50  0000 C CNN
+	1    6200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D2
+U 1 1 597826B9
+P 5800 3550
+F 0 "D2" H 5800 3650 50  0000 C CNN
+F 1 "ZENER" H 5800 3450 50  0000 C CNN
+F 2 "" H 5800 3550 50  0000 C CNN
+F 3 "" H 5800 3550 50  0000 C CNN
+	1    5800 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3500 6200 4750
+Wire Wire Line
+	5900 4250 6200 4250
+Wire Wire Line
+	5800 3750 6200 3750
+Connection ~ 6200 3750
+Wire Wire Line
+	5550 3350 5900 3350
+Wire Wire Line
+	6200 2700 6200 3100
+Connection ~ 5800 3350
+Connection ~ 5550 3350
+Wire Wire Line
+	6200 1950 6200 2400
+Wire Wire Line
+	5550 1950 5550 2400
+Connection ~ 5550 1950
+Wire Wire Line
+	6200 4950 6200 4800
+$EndSCHEMATC
