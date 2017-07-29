@@ -12,5 +12,5 @@ KC_FlashLightFastCharge: A new circuit that speeds up charging while also extend
 LTSimCircuits:  The simulation files for the new circuits in LTSPICE
 
 
-See the complete E36 BWM Flight Teardown at:  https://wordpress.com/post/surfncircuits.com/1015
+See the complete E36 BWM Flight Teardown at:  http://surfncircuits.com/2017/07/23/teardown-and-repair-of-the-simply-designed-bmw-e36-glovebox-flashlight/
 See the two new Kook Hack Circuits that extend the Flashlight battery at :   
