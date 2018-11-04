@@ -14,4 +14,5 @@ __LTSimCircuits__:  The simulation files for the new circuits in LTSPICE
 
 See the complete E36 BWM Flight Teardown at:  [Teardown and Repair of a Simply Designed BMW E36 Globebox Flashlight](http://surfncircuits.com/2017/07/23/teardown-and-repair-of-the-simply-designed-bmw-e36-glovebox-flashlight/ )
 
-See the two new Kook Hack Circuits that extend the Flashlight battery at :   
+See the two new Kook Hack Circuits that extend the Flashlight lifetime past 10 years at :  
+[Hacking a 1996 BWM E36 Flashlight for Longer Lifetime](https://wp.me/p85ddV-9H)
