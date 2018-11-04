@@ -113,7 +113,7 @@ F 3 "" V 5300 4660 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DIP_x01 SW1
+L SW_DIP_x01-RESCUE-BMW_E36_FlashLight SW1
 U 1 1 59781418
 P 6050 4250
 F 0 "SW1" H 6050 4400 50  0000 C CNN
@@ -167,15 +167,11 @@ F 1 "TL431LP" H 4650 4000 50  0000 C CNN
 F 2 "TO-92" H 4650 3950 50  0000 C CIN
 F 3 "" H 4650 4100 50  0000 C CNN
 	1    4650 4100
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	4650 4000 4650 3700
 Wire Wire Line
 	4650 3700 5300 3700
 Connection ~ 5300 3700
-Wire Wire Line
-	4650 4200 4650 4900
 Connection ~ 4650 4900
 $Comp
 L R R1
@@ -200,8 +196,6 @@ F 3 "" H 5000 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 4100 5000 4100
-Wire Wire Line
 	5000 4050 5000 4200
 Connection ~ 5000 4100
 Wire Wire Line
@@ -212,4 +206,10 @@ Wire Wire Line
 Connection ~ 5000 4900
 Wire Wire Line
 	4750 3300 5300 3300
+Wire Wire Line
+	4750 4100 5000 4100
+Wire Wire Line
+	4650 4000 4650 3700
+Wire Wire Line
+	4650 4200 4650 4900
 $EndSCHEMATC
